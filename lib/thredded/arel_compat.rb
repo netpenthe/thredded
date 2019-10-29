@@ -4,7 +4,7 @@ unless Rails::VERSION::MAJOR == 5 && Rails::VERSION::MINOR >= 2 || Rails::VERSIO
   require 'thredded/rails_lt_5_2_arel_case_node.rb'
 end
 
-if Rails::VERSION::MAJOR == 4
+if Rails::VERSION::MAJOR == 99
   # Make `pluck` compatible with Arel.
   require 'active_record/relation'
   ActiveRecord::Relation.prepend(Module.new do
