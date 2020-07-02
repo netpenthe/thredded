@@ -50,7 +50,7 @@
           const count = (+unreadFollowedCountElement.textContent) - 1;
           if (count === 0) {
             const navItem = getUnreadNavItem(unreadFollowedCountElement);
-            navItem.parentElement.removeChild(navItem);
+            //navItem.parentElement.removeChild(navItem);
           } else {
             unreadFollowedCountElement.textContent = count.toLocaleString();
           }
